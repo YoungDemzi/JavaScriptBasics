@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Functions: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    
+
+  </body>
+  <script>
+    let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+    let answerArray=[answer];
+
+    for(let i=1; i<=answer;i++)
+    {
+        
+        if(i%3==0 && i%5==0) answerArray[i] = 'FizzBuzz';
+        else if(i%3==0) answerArray[i] = 'Fizz';
+        else if(i%5==0) answerArray[i] = 'Buzz';
+        else answerArray[i]=i;
+        console.log(answerArray[i]);
+    }
+
+
+  </script>
+
+</html>
