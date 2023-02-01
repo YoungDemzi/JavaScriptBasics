@@ -1,45 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
-    <meta charset="utf-8"/>
-    <title>Functions: Task 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My spending record</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      canvas {
-        border: 1px solid black;
-      }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
   </head>
-
   <body>
+    <h1>My spending record</h1>
 
-    
+      <table>
+        <caption>Data about the planets of our solar system (Planetary facts taken from Nasa's Planetary Fact Sheet - Metric).</caption>
+        <colgroup>
+          <col span="2">
+          <col style="border: 2px solid black">
+          <col span="9">
+        </colgroup>
+        <thead>
+          <tr>
+            <td colspan="2"></td>
+            <th>Name</th>
+            <th>Mass (1024kg)</th>
+            <th>Diameter (km)</th>
+            <th>Density (kg/m3)</th>
+            <th>Gravity (m/s2)</th>
+            <th>Length of day (hours)</th>
+            <th>Distance from Sun (106km)</th>
+            <th>Mean temperature (°C)</th>
+            <th>Number of moons</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="4" colspan="2">Terrestrial Planets</th>
+            <th>Mercury</th>
+            <td>0.330</td>
+            <td>4,879</td>
+            <td>5427</td>
+            <td>3.7</td>
+            <td>4222.6</td>
+            <td>57.9</td>
+            <td>167</td>
+            <td>0</td>
+            <td>Closest to the Sun</td>
+          </tr>
+          <tr>
+            <th>Venus</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>2802.0</td>
+            <td>108.2</td>
+            <td>464</td>
+            <td>0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Earth</th>
+            <td>5.97</td>
+            <td>12,756</td>
+            <td>5514</td>
+            <td>9.8</td>
+            <td>24.0</td>
+            <td>149.6</td>
+            <td>15</td>
+            <td>1</td>
+            <td>Our world</td>
+          </tr>
+        <tr>
+          <th>Mars</th>
+          <td>5.97</td>
+          <td>12,756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Random info</td>
+        </tr>
+        <tr>
+          <th rowspan="4">Jovian Planets</th>
+          <th rowspan="2">Gas Giants</th>
+          <th>Jupiter</th>
+          <td>5.97</td>
+          <td>12,756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Random info</td>
+        </tr>
+        <tr>
+          <th>Saturn</th>
+          <td>5.97</td>
+          <td>12,756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Random info</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Ice Giants</th>
+          <th>Uranus</th>
+          <td>5.97</td>
+          <td>12,756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Random info</td>
+        </tr>
+        <tr>
+          <th>Neptune</th>
+          <td>5.97</td>
+          <td>12,756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Random info</td>
+        </tr>
+        <tr>
+          <th colspan="2">Dwarf Planets</th>
+          <th>Pluto</th>
+          <td>5.97</td>
+          <td>12,756</td>
+          <td>5514</td>
+          <td>9.8</td>
+          <td>24.0</td>
+          <td>149.6</td>
+          <td>15</td>
+          <td>1</td>
+          <td>Random info</td>
+        </tr>
+            
+        </tbody>
+    </table>
 
   </body>
-  <script>
-    let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-    let answerArray=[answer];
-
-    for(let i=1; i<=answer;i++)
-    {
-        
-        if(i%3==0 && i%5==0) answerArray[i] = 'FizzBuzz';
-        else if(i%3==0) answerArray[i] = 'Fizz';
-        else if(i%5==0) answerArray[i] = 'Buzz';
-        else answerArray[i]=i;
-        console.log(answerArray[i]);
-    }
-
-
-  </script>
-
 </html>
